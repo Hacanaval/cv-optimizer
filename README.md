@@ -60,18 +60,21 @@ http://localhost:5000
    - Descargar versiones optimizadas
 
 ## 📁 Estructura del Proyecto
-v-optimizer/
-├── src/ # Código fuente
-│ ├── app.py # Aplicación Flask
-│ ├── job_cv_optimizer.py # Lógica principal
-│ ├── file_processor.py # Procesamiento de archivos
-│ ├── static/ # Archivos estáticos
-│ └── templates/ # Plantillas HTML
-├── data/ # Datos
-│ ├── raw/ # Datos sin procesar
-│ └── processed/ # Datos procesados
-├── tests/ # Pruebas unitarias
-└── notebooks/ # Jupyter notebooks
+📂 cv-optimizer/  
+ ├── 📂 src/                # Código fuente  
+ │   ├── app.py            # Aplicación Flask  
+ │   ├── job_cv_optimizer.py  # Lógica principal  
+ │   ├── file_processor.py  # Procesamiento de archivos  
+ │   ├── 📂 static/         # Archivos estáticos  
+ │   ├── 📂 templates/      # Plantillas HTML  
+ │  
+ ├── 📂 data/               # Datos  
+ │   ├── 📂 raw/            # Datos sin procesar  
+ │   ├── 📂 processed/      # Datos procesados  
+ │  
+ ├── 📂 tests/              # Pruebas unitarias  
+ ├── 📂 notebooks/          # Jupyter notebooks  
+
 
 ## 🔒 Seguridad
 
