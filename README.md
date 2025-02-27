@@ -27,10 +27,10 @@ git clone https://github.com/Hacanaval/cv-optimizer.git
 cd cv-optimizer
 
 2. Crear y activar entorno virtual:
-# Activarlo en Mac/Linux
+#### Activarlo en Mac/Linux
 source venv/bin/activate  
 
-# Activarlo en Windows
+#### Activarlo en Windows
 venv\Scripts\activate
 
 3. Instalar dependencias:
