@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Optimizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>CV Optimizer</h1>
+            
+            <form id="optimizerForm">
+                <div class="input-group">
+                    <label for="cvText">Tu CV</label>
+                    <div class="cv-format-info">
+                        <div class="info-text">
+                            <h4>CV Optimizer</h4>
+                            <p>Optimiza tu hoja de vida para maximizar la compatibilidad con la vacante seleccionada, reorganizando y resaltando tus experiencias y habilidades existentes.</p>
+                            
+                            <h4>Formato Recomendado</h4>
+                            <ul>
+                                <li>Texto simple sin diseños o plantillas complejas</li>
+                                <li>Sin tablas, imágenes o elementos gráficos</li>
+                                <li>Estructura clara: Experiencia, Educación, Habilidades</li>
+                            </ul>
+                            <p class="info-note">Un formato limpio facilita la lectura por sistemas ATS y mejora la optimización.</p>
+                        </div>
+                    </div>
+                    <textarea id="cvText" name="cvText" placeholder="Pega aquí tu CV en formato texto..."></textarea>
+                    <div class="file-upload-container">
+                        <input type="file" id="cvFile" accept=".txt,.doc,.docx,.pdf">
+                        <label for="cvFile" class="file-label">
+                            <svg class="upload-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17 8 12 3 7 8"/>
+                                <line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                            Subir CV (PDF, Word o TXT)
+                        </label>
+                        <span id="fileName" class="file-name"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="linkedinUrl">URL de LinkedIn</label>
+                    <input type="url" id="linkedinUrl" name="linkedinUrl" 
+                           placeholder="https://www.linkedin.com/jobs/view/...">
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Optimizar CV</span>
+                    <div class="loader" style="display: none;"></div>
+                </button>
+            </form>
+
+            <div id="results" style="display: none;">
+                <div class="result-card">
+                    <h3>CV en Español</h3>
+                    <textarea id="cvEsResult" readonly></textarea>
+                    <button class="download-btn" data-lang="es">
+                        <span class="download-icon">⬇️</span>
+                        Descargar versión en Español
+                    </button>
+                </div>
+
+                <div class="result-card">
+                    <h3>CV en Inglés</h3>
+                    <textarea id="cvEnResult" readonly></textarea>
+                    <button class="download-btn" data-lang="en">
+                        <span class="download-icon">⬇️</span>
+                        Descargar versión en Inglés
+                    </button>
+                </div>
+            </div>
+
+            <div id="processingStatus" class="status-message" style="display: none;">
+                <div class="status-icon">⚙️</div>
+                <div class="status-text">Procesando tu CV...</div>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <div class="error-icon">⚠️</div>
+                <div class="error-text"></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
