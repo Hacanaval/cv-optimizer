@@ -23,7 +23,7 @@ CV Optimizer es una aplicación web que optimiza hojas de vida para vacantes esp
 
 1. Clonar el repositorio:
 bash
-git clone https://github.com/tu-usuario/cv-optimizer.git
+git clone https://github.com/Hacanaval/cv-optimizer.git
 cd cv-optimizer
 
 2. Crear y activar entorno virtual:
