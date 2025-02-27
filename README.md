@@ -22,17 +22,19 @@ CV Optimizer es una aplicación web que optimiza hojas de vida para vacantes esp
 ## 🛠️ Instalación
 
 1. Clonar el repositorio:
-bash
+
 git clone https://github.com/Hacanaval/cv-optimizer.git
 cd cv-optimizer
 
 2. Crear y activar entorno virtual:
-bash
-python -m venv venv
-source venv/bin/activate # En Windows: venv\Scripts\activate
+# Activarlo en Mac/Linux
+source venv/bin/activate  
+
+# Activarlo en Windows
+venv\Scripts\activate
 
 3. Instalar dependencias:
-bash
+
 pip install -r requirements.txt
 
 4. Configurar variables de entorno:
@@ -45,7 +47,7 @@ pip install -r requirements.txt
 ## 💻 Uso
 
 1. Iniciar la aplicación:
-bash
+
 python src/app.py
 
 2. Abrir en el navegador:
