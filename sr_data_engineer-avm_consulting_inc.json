@@ -1,0 +1,36 @@
+{
+    "Fecha___de___la___solicitud": "27-02-2025",
+    "Enlace___de___la___vacante": "https://www.linkedin.com/jobs/view/4160830645/?alternateChannel=search&refId=Cmb3%2F7smYbU1QaQsNQcsGw%3D%3D&trackingId=Uu6sHS%2FzeIre2wopyhA31g%3D%3D",
+    "Idioma___de___la___publicación": "inglés",
+    "Título___del___puesto": "Sr. Data Engineer",
+    "Nombre___de___la___empresa": "AVM Consulting Inc",
+    "Nombre___del___reclutador": "NA",
+    "Correo___electrónico": "NA",
+    "WhatsApp": "NA",
+    "Información___del___trabajo": "Únete como Desarrollador de Datos y contribuye a la construcción y mantenimiento de soluciones de datos en AWS para uno de nuestros clientes más grandes. Diseñarás, desarrollarás, probarás e implementarás nuevas funcionalidades, trabajando con grandes conjuntos de datos, Python, Spark y varios servicios de AWS. Mentorizarás a otros, liderarás proyectos e impactarás en el éxito de nuestro equipo. Buscamos Ingenieros de Datos experimentados para ayudar a un gran cliente a migrar trabajos ETL legados (actualmente Glue/Lambda/Snowflake para sistemas de negocio) a su estándar Airflow/Databricks. Rol remoto para Latinoamérica, preferiblemente en zona horaria EST y con una duración de 6+ meses.",
+    "Responsabilidades": [
+        "Ayudar a migrar trabajos ETL antiguos (Lambda, Glue, Snowflake) al nuevo estándar ETL del cliente (Airflow+Databricks).",
+        "Ser parte del equipo del cliente que ejecuta este proyecto.",
+        "Operar de forma independiente."
+    ],
+    "Requisitos": [
+        "10+ años de experiencia total.",
+        "8+ años de experiencia en ingeniería de datos.",
+        "4+ años con Python.",
+        "4+ años en Airflow.",
+        "4+ años en Databricks y PySpark.",
+        "2+ años en AWS Glue.",
+        "2+ años en Snowflake.",
+        "4+ años con SQL. Algo de NoSQL.",
+        "Experiencia procesando grandes conjuntos de datos.",
+        "Experiencia en CI/CD (Git, Jenkins).",
+        "Experiencia con bases de datos (Oracle, Redshift, Aurora).",
+        "Experiencia con herramientas de cómputo, base de datos y gestión de AWS.",
+        "Habilidades en ETL, flujos de datos, ingesta, reporting, analítica, comunicación general y resolución de problemas técnicos."
+    ],
+    "Salario": "NA",
+    "Horario___laboral": "Tiempo completo",
+    "Modalidad___de___trabajo": "Remoto",
+    "Ubicación": "NA",
+    "Beneficios": null
+}
