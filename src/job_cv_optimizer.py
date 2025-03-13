@@ -5,6 +5,15 @@ import time
 import datetime
 import pandas as pd
 from bs4 import BeautifulSoup
+import sys
+
+print("Rutas de búsqueda:", sys.path)
+try:
+    import selenium
+    print("Selenium se encuentra en:", selenium.__file__)
+except ImportError as e:
+    print("Error al importar selenium:", e)
+
 
 # Selenium y webdriver-manager para scraping
 from selenium import webdriver
@@ -22,6 +31,16 @@ os.makedirs("data/raw", exist_ok=True)
 os.makedirs("data/processed", exist_ok=True)
 
 # Configurar la API key de Gemini (desde variable de entorno o .env)
+
+from dotenv import load_dotenv
+import os
+
+# Cargar variables de entorno desde .env
+load_dotenv()
+
+# Verificar que la API key se cargó
+print("GEMINI_API_KEY:", os.getenv("GEMINI_API_KEY"))
+
 try:
     genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 except KeyError:
